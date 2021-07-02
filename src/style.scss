@@ -1,0 +1,65 @@
+// colors
+$black: black;
+$gray: gray;
+$red: red;
+$green: green;
+$blue: blue;
+$orange: orange;
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border: 1px solid $gray;
+    border-radius: 50%;
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c d';
+}
+
+.circle div:hover {
+    border: 1px solid $black;
+}
+
+.red {
+    grid-area: a;
+    background-color: $red;
+    border-top-left-radius: 100%;
+}
+
+.green {
+    grid-area: b;
+    background-color: $green;
+    border-top-right-radius: 100%;
+}
+
+.blue {
+    grid-area: c;
+    background-color: $blue;
+    border-bottom-left-radius: 100%;
+}
+
+.yellow {
+    grid-area: d;
+    background-color: $orange;
+    border-bottom-right-radius: 100%;
+}
+
+.game-levels p:hover {
+    color: $blue;
+}
+
+.lighter, :disabled {
+    opacity: 0.6;
+}
+
+.d-none {
+    display: none;
+}
